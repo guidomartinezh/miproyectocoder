@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: large;
 }
+
 .navbar-brand {
   font-weight: bolder;
 }
@@ -38,9 +39,19 @@ main {
   background-image: url(./img/mic.jpg);
   background-size: cover;
 }
+.mainhome .lemamain {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800px;
+  color: white;
+  font-size: 20px;
+}
 
 .mainreel {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: black;
   height: 100vh;
   padding-bottom: 0px;
 }
@@ -56,17 +67,6 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   padding: 10px;
-}
-
-.lemamain {
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 80;
-  color: white;
-  font-size: 20px;
 }
 
 .tituloquehacemos {
@@ -95,8 +95,7 @@ h2 {
   place-items: center;
   grid-gap: 30px;
 }
-
-.item {
+.contenedor .item {
   height: 250px;
   width: 250px;
   background-color: white;
@@ -118,76 +117,43 @@ h2 {
   grid-gap: 10px;
 }
 
-.grid-item {
+.grid-item img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
 .mainproyectos {
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
-  height: 100vh;
-}
-
-#carouselExampleIndicators {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-}
-
-.carousel-item {
-  background-position: center;
-  background-repeat: non-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: red;
 }
 
 footer {
   text-align: center;
+  align-items: center;
   font-size: 16px;
   color: white;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0);
+  height: 50px;
+  background-color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
-  margin-top: auto;
   position: fixed;
   bottom: 0;
 }
 
-.footerclientes {
-  text-align: center;
-  font-size: 16px;
-  color: white;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 100%;
-  position: fixed;
-  margin-top: 90px;
+.list-inline-item {
+  padding-left: 50px;
+  padding-top: 15px;
 }
 
-.footerproyectos {
-  text-align: center;
-  font-size: 16px;
-  color: white;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 100%;
-  margin-top: 0px;
-  position: fixed;
-  bottom: 0;
-}
-
-.fa-brands {
-  color: rgb(255, 255, 255);
-  position: relative;
-  bottom: 0px;
-  margin: 0%;
-  margin-bottom: 15px;
-  padding: 0%;
+.parrafofooter {
+  padding-top: 15px;
+  font-size: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -218,6 +184,16 @@ footer {
     background-color: white;
     background-size: cover;
     background-position: center;
+  }
+  .item img {
     border-radius: 50px;
   }
-}/*# sourceMappingURL=main.css.map */
+  .mainproyectos {
+    height: auto;
+    background-color: black;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=estilos.css.map */
