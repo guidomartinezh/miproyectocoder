@@ -169,7 +169,7 @@ footer{
     
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:844px){
 
     .mainhome{
         height: calc(100vh - 80px);
@@ -239,13 +239,13 @@ footer{
     .grid-container{
         display: grid;
         align-items: center;
-        padding-left: 50px;
+        padding-left: 40px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
         width: 100%;
         grid-gap: 10px;
         margin-top: 50px;
-        background-color: rgb(255, 255, 255);
+        background-color: $colorsecundario;
     }
 
     .grid-item:hover{
