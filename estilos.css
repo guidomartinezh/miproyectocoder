@@ -1,3 +1,13 @@
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -50,15 +60,46 @@ main {
   font-size: 20px;
 }
 
-.mainreel {
+.main-reel {
+  height: 100%;
+  width: 100%;
   background-color: black;
-  height: 100vh;
-  padding-bottom: 0px;
+}
+
+.reel {
+  background-color: black;
+  height: 400px;
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 iframe {
-  height: 100vh;
-  width: 100%;
+  height: 100%;
+  width: 60%;
+}
+
+.tituloreel {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 50px;
+  animation: slide-in 3s forwards;
+  font-weight: bolder;
+  background-color: black;
+}
+
+.reel-sec2 {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reel-sec2 .imgreel {
+  width: 30%;
+  height: 80px;
+  margin: 30px;
 }
 
 h2 {
@@ -115,6 +156,8 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 10px;
+  align-items: center;
+  padding: 60px;
 }
 
 .grid-item img {
@@ -130,7 +173,20 @@ h2 {
 
 .mainproyectos {
   height: 100%;
-  background-color: red;
+}
+
+#fondocontacto {
+  background-image: url(/img/layered-waves-haikei.svg);
+}
+
+.card {
+  margin: 30px;
+}
+
+#botton {
+  background-color: rgba(47, 47, 47, 0.865);
+  -o-object-position: center;
+     object-position: center;
 }
 
 footer {
@@ -225,5 +281,24 @@ footer {
   .grid-item:hover {
     scale: 1.2;
     transition: 0.3s;
+  }
+  #botton {
+    background-color: rgba(57, 57, 57, 0.337);
+  }
+  .form-control {
+    background-color: rgba(121, 121, 121, 0.11);
+  }
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .tituloreel {
+    font-size: 16px;
+    text-shadow: 2px 2px 5px white;
+  }
+  .reel-sec2 {
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */
