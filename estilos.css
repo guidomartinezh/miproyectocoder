@@ -59,6 +59,7 @@ main {
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800px;
+  margin-left: 10px;
   color: white;
   font-size: 20px;
 }
@@ -135,7 +136,7 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   grid-gap: 50px 20px;
   padding: 0%;
-  height: 800px;
+  height: 600px;
   place-items: center;
   grid-gap: 30px;
 }
@@ -175,11 +176,37 @@ h2 {
 }
 
 .mainproyectos {
-  height: 100%;
+  height: 1200px;
+  background-color: white;
+}
+
+.tituloproyectos {
+  background-color: white;
+  margin: 50px;
+}
+
+.parrafoproyectos {
+  height: 300px;
+  width: 60%;
+  margin: 90px;
+  margin-left: 250px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-proyecto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
 }
 
 #fondocontacto {
   background-image: url(./img/layered-waves-haikei.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card {
@@ -245,6 +272,9 @@ footer {
     grid-gap: 40px;
     background-color: rgb(255, 255, 255);
   }
+  .pfer {
+    height: 120px;
+  }
   .item {
     height: 100%;
     width: 250px;
@@ -256,27 +286,36 @@ footer {
     border-radius: 50px;
   }
   .mainproyectos {
-    height: auto;
-    background-color: black;
-  }
-  .carousel-item img {
+    height: 100vh;
     width: 100%;
-    height: 100%;
   }
-  .pfer {
-    height: 120px;
+  .tituloproyectos {
+    background-color: white;
+    font-size: 30px;
+  }
+  .parrafoproyectos {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .p-proyecto {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 40px;
+    color: black;
+    animation: slide-in 3s forwards;
+  }
+  .carousel-item {
+    height: auto;
+    background-color: white;
   }
   .carousel-item img {
     width: 100%;
     height: 250px;
-    padding: 10px;
-    margin-top: 100px;
-    background-color: white;
-  }
-  .mainproyectos {
-    height: auto;
-    background-color: white;
-    position: fixed;
   }
   .grid-container {
     display: grid;
@@ -310,5 +349,11 @@ footer {
     height: 300px;
     padding: 10px;
     margin: 10px;
+  }
+  .reel-sec2 .imgreel {
+    width: 45%;
+  }
+  .list-inline {
+    padding-right: 60px;
   }
 }/*# sourceMappingURL=estilos.css.map */
