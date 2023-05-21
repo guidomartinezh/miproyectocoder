@@ -18,13 +18,16 @@ body {
   height: 100%;
 }
 
-.navbar {
-  font-family: "Montserrat", sans-serif;
-  font-size: large;
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.511);
+}
+
+.navbar-custom-reel {
+  background-color: rgba(21, 21, 21, 0.974);
 }
 
 .navbar-brand {
-  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul li {
@@ -212,6 +215,14 @@ footer {
   font-size: 10px;
 }
 
+.footer-custom {
+  background-color: rgb(136, 135, 135);
+}
+
+.footer-custom-reel {
+  background-color: rgba(21, 21, 21, 0.974);
+}
+
 @media only screen and (max-width: 844px) {
   .mainhome {
     height: calc(100vh - 80px);
@@ -294,7 +305,6 @@ footer {
   }
   .tituloreel {
     font-size: 16px;
-    text-shadow: 2px 2px 5px white;
   }
   .reel-sec2 {
     height: 300px;
